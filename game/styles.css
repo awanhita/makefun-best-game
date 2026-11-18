@@ -1,0 +1,26 @@
+/* EMBERFALL — page chrome around the game canvas. */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #03030a;
+  height: 100%;
+  overflow: hidden;
+}
+#wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #0b1030 0%, #03030a 70%);
+}
+#game {
+  width: min(100vw, 160vh);
+  height: auto;
+  max-height: 100vh;
+  display: block;
+  cursor: crosshair;
+  border-radius: 6px;
+  box-shadow: 0 0 60px rgba(93, 242, 255, 0.12), 0 0 120px rgba(177, 75, 255, 0.10);
+}
